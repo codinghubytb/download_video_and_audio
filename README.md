@@ -1,37 +1,33 @@
-# Téléchargement de Vidéos YouTube, Instagram, Tiktok, Snapchat, Reddit, Twitter etc... avec yt-dlp
+# Download YouTube, Instagram, Tiktok, Snapchat, Reddit, Twitter etc. videos with yt-dlp
 
-Ce projet permet de télécharger des vidéos depuis Internet en utilisant `yt-dlp`.  
+This project lets you download videos from the Internet using `yt-dlp`.  
 
-## Prérequis
+## Prerequisites
 
-Avant de pouvoir exécuter les scripts, vous devez installer les dépendances suivantes :
+Before you can run the scripts, you need to install the following dependencies:
 
-- **yt-dlp** : Un outil en ligne de commande pour télécharger des vidéos depuis YouTube, Instagram et d'autres plateformes.
-- **Python 3** : Le script est écrit en Python 3 et utilise `argparse` pour gérer les arguments de ligne de commande.
+- **yt-dlp**: A command-line tool for downloading videos from YouTube, Instagram and other platforms.
+- **Python 3**: The script is written in Python 3 and uses `argparse` to handle command-line arguments.
 
-### Installation des dépendances
+### Installing dependencies
 
-1. Clonez ce dépôt ou téléchargez le code source sur votre machine.
-2. Installez `yt-dlp` avec `pip` :
+1. Clone this repository or download the source code to your machine.
+2. Install `yt-dlp` with `pip` :
 
     ```bash
     pip install yt-dlp
     ```
 
-## Utilisation
+## Usage
 
-### 📌 Télécharger une vidéo YouTube
-
-Utilisez `youtube.py` en fournissant **l'ID** de la vidéo :
+### 📌 Download a video
 
 ```bash
-python youtube.py <video_id>
+python script.py “<url>” “Video” “video” 
 ````
 
-### 📌 Télécharger une vidéo Instagram
-
-Utilisez `instagram.py` en fournissant **l'URL complète** de la vidéo :
+### 📌 Download a audio
 
 ```bash
-python instagram.py <url_de_la_video_instagram>
+python script.py “<url>” “Audio” “audio” 
 ````
