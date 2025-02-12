@@ -2,7 +2,7 @@ import yt_dlp
 import argparse
 import os
 
-def download_instagram_video(url, titre, extension, cookies_file=None):
+def download_video(url, titre, extension, cookies_file=None):
     output_directory = ""
     os.makedirs(output_directory, exist_ok=True)
 
@@ -18,14 +18,14 @@ def download_instagram_video(url, titre, extension, cookies_file=None):
         ydl.download([url])
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Telecharge une video.")
+    parser = argparse.ArgumentParser(description="Download Video")
     parser.add_argument("url", help="URL")
-    parser.add_argument("title", help="Titre du fichier (sans extension)")
+    parser.add_argument("title", help="Title (without extension)")
     parser.add_argument("extension", choices=["video", "audio"], help="Extension du fichier (video ou audio)")
     parser.add_argument("cookies", help="Chemin vers le fichier de cookies", default=None)
     
     
     args = parser.parse_args()
 
-    download_instagram_video(args.url, args.title, args.extension, args.cookies)
+    download_video(args.url, args.title, args.extension, args.cookies)
     print(f"Download Finished : {args.extension.upper()} !")
