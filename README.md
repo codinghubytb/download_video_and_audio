@@ -1,9 +1,6 @@
-# Téléchargement de Vidéos YouTube et Instagram avec yt-dlp
+# Téléchargement de Vidéos YouTube, Instagram, Tiktok, Snapchat, Reddit, Twitter etc... avec yt-dlp
 
-Ce projet permet de télécharger des vidéos depuis **YouTube** et **Instagram** en utilisant `yt-dlp`.  
-Deux scripts sont disponibles :
-- **`youtube.py`** : Télécharge des vidéos YouTube en utilisant l'ID de la vidéo.
-- **`instagram.py`** : Télécharge des vidéos Instagram en utilisant l'URL complète.
+Ce projet permet de télécharger des vidéos depuis Internet en utilisant `yt-dlp`.  
 
 ## Prérequis
 
