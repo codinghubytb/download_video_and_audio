@@ -1,6 +1,6 @@
-# Download YouTube, Instagram, Tiktok, Snapchat, Reddit, Twitter videos with yt-dlp
+# Download YouTube, Instagram, Tiktok, Snapchat, Reddit, Twitter videos and audios with yt-dlp
 
-This project lets you download videos from the Internet using `yt-dlp`.  
+This project lets you download videos and audio from the Internet using `yt-dlp`.  
 
 ## Prerequisites
 
