@@ -3,7 +3,8 @@ import argparse
 import os
 
 def download_video(url, titre, extension, cookies_file=None):
-    output_directory = ""
+    
+    output_directory = os.path.dirname(os.path.abspath(__file__))
     os.makedirs(output_directory, exist_ok=True)
 
     ydl_opts = {
@@ -21,9 +22,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Download Video")
     parser.add_argument("url", help="URL")
     parser.add_argument("title", help="Title (without extension)")
-    parser.add_argument("extension", choices=["video", "audio"], help="Extension du fichier (video ou audio)")
-    parser.add_argument("cookies", help="Chemin vers le fichier de cookies", default=None)
-    
+    parser.add_argument("extension", choices=["video", "audio"], help="Extension file (video ou audio)")
+    parser.add_argument("cookies", help="Path File Cookie", default=None)
     
     args = parser.parse_args()
 

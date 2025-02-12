@@ -23,11 +23,11 @@ Before you can run the scripts, you need to install the following dependencies:
 ### 📌 Download a video
 
 ```bash
-python script.py “<url>” “Video” “video” 
+python main.py "<url>" "Video" video "<cookie>" 
 ````
 
 ### 📌 Download a audio
 
 ```bash
-python script.py “<url>” “Audio” “audio” 
+python script.py "<url>" "Audio" audio "<cookie>" 
 ````
